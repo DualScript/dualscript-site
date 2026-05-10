@@ -278,22 +278,22 @@
     .pillars { gap: 1.25rem; }
   }
 
-  /* Narrow mobile — 2-col grid, third pillar spans full width */
+  /* Narrow mobile — single column stack */
   @media (max-width: 480px) {
     .pillars {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1.75rem 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1.75rem;
       width: 100%;
-      max-width: 320px;
+      max-width: 280px;
     }
     .pillar {
       max-width: none;
+      width: 100%;
     }
-    .pillar:last-child {
-      grid-column: 1 / -1;
-      max-width: 160px;
-      margin: 0 auto;
+    .pillar h3 {
+      letter-spacing: 0.06em;
     }
     .desc {
       font-size: 14px;
