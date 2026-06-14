@@ -56,8 +56,8 @@ section {
   box-sizing: border-box;
   background: transparent;
   border: none;
-  position: relative;
-  z-index: 1;
+  position: static;
+  z-index: auto;
 }
 
 *, *::before, *::after {
@@ -213,4 +213,20 @@ body::after {
 .product-card:hover {
   border-color: var(--accent-dim);
   background: rgba(62, 207, 255, 0.04);
+}
+
+.product-card h2 {
+  font-family: var(--font-inter), Inter, sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+@media (max-width: 768px) {
+  .product-section-inner {
+    padding: 0 1.25rem;
+  }
+
+  .product-card {
+    padding: 1.5rem;
+  }
 }

@@ -12,7 +12,7 @@ export default function Home() {
             borderColor: "var(--border)",
           }}
         >
-          <div className="mx-auto flex h-14 max-w-[1100px] items-center justify-between px-8">
+          <div className="mx-auto flex h-14 max-w-[1100px] items-center justify-between px-4 md:px-8">
             <span
               className="text-[15px] tracking-[0.08em]"
               style={{ color: "var(--text)" }}
@@ -41,7 +41,7 @@ export default function Home() {
               overflow: "hidden",
               zIndex: 1,
               paddingTop: "4rem",
-              paddingBottom: "2rem",
+              paddingBottom: "1rem",
             }}
           >
             <div
@@ -56,7 +56,7 @@ export default function Home() {
                 width: "100%",
               }}
             >
-              <div style={{ width: "min(520px, 80vw)", marginBottom: "2.5rem" }}>
+              <div style={{ width: "min(420px, 85vw)", marginBottom: "2.5rem" }}>
                 <svg
                   id="Layer_1"
                   xmlns="http://www.w3.org/2000/svg"
@@ -188,7 +188,7 @@ export default function Home() {
 
               <h1
                 style={{
-                  fontSize: "clamp(2rem, 4vw, 3.2rem)",
+                  fontSize: "clamp(1.75rem, 5vw, 3.2rem)",
                   fontWeight: 500,
                   color: "var(--text)",
                   lineHeight: 1.2,
@@ -362,10 +362,10 @@ export default function Home() {
             >
               <div
                 style={{
-                  width: "100%",
+                  width: "80px",
                   height: "1px",
                   background: "var(--border)",
-                  marginBottom: "3rem",
+                  margin: "0 auto 3rem",
                 }}
               />
               <h2
