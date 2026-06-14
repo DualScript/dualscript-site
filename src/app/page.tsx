@@ -378,7 +378,7 @@ export default function Home() {
                 className="text-[15px] font-light leading-[1.85]"
                 style={{ color: "var(--muted)" }}
               >
-                We build focused, vertical-specific software — not platforms,
+                We build focused, vertical-specific software - not platforms,
                 not consulting, not AI wrappers. Every product DualScript ships
                 solves one real problem for one defined professional audience.
                 From financial markets to creative trades.
