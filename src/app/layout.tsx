@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     siteName: "DualScript",
     images: [
       {
-        url: "/opengraph-image",
+        url: "https://www.dualscript.io/og-image.png",
         width: 1200,
         height: 630,
         alt: "DualScript — Vertical Software for Professionals",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "DualScript — Vertical Software for Professionals",
     description: "DualScript builds purpose-built software tools for professionals.",
-    images: ["/opengraph-image"],
+    images: ["https://www.dualscript.io/og-image.png"],
   },
 };
 
