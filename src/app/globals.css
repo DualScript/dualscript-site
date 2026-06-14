@@ -20,7 +20,11 @@ html {
 body {
   background: var(--bg);
   color: var(--text);
-  font-family: DM Mono, monospace;
+  font-family: var(--font-dm-mono), "DM Mono", monospace;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, a, div {
+  font-family: inherit;
 }
 
 main {
@@ -35,6 +39,7 @@ section {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  isolation: auto;
 }
 
 .product-section-inner {
@@ -45,6 +50,8 @@ section {
   box-sizing: border-box;
   background: transparent;
   border: none;
+  position: relative;
+  z-index: 1;
 }
 
 *, *::before, *::after {

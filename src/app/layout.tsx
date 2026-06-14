@@ -5,6 +5,7 @@ import "./globals.css";
 const dmMono = DM_Mono({
   weight: ["300", "400", "500"],
   subsets: ["latin"],
+  variable: "--font-dm-mono",
 });
 
 export const metadata: Metadata = {
@@ -18,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={dmMono.className}>
+    <html lang="en" className={`${dmMono.variable} ${dmMono.className}`}>
       <body>{children}</body>
     </html>
   );
