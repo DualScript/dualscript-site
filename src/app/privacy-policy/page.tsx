@@ -78,8 +78,9 @@ export default function PrivacyPolicy() {
                 DualScript LLC (&ldquo;DualScript,&rdquo; &ldquo;we,&rdquo;
                 &ldquo;us&rdquo;) operates dualscript.io. This policy explains
                 what information we collect when you visit our website, how we
-                use it, and the choices you have. We are a pre-product software
-                company with a small data footprint — we collect only what we
+                use it, and the choices you have. We build vertical software
+                products, with one live offering and more in development. On this
+                site we keep a small data footprint and collect only what we
                 need to respond to you and share occasional company updates.
               </p>
 
@@ -97,22 +98,22 @@ export default function PrivacyPolicy() {
                   <li>
                     <strong style={{ color: "var(--text)", fontWeight: 400 }}>
                       Contact form
-                    </strong>{" "}
-                    — your name, email address, and message when you reach out
+                    </strong>
+                    : your name, email address, and message when you reach out
                     to us.
                   </li>
                   <li>
                     <strong style={{ color: "var(--text)", fontWeight: 400 }}>
                       Email signup form
-                    </strong>{" "}
-                    — your email address when you sign up to hear about DualScript
+                    </strong>
+                    : your email address when you sign up to hear about DualScript
                     products and updates.
                   </li>
                 </ul>
                 <p className="mt-3">
-                  We do not collect payment information, account credentials, or
-                  any data from product users — we do not have customers or
-                  end-user products at this time.
+                  This policy applies to dualscript.io only. If you use one of
+                  our products directly, that product&apos;s privacy policy
+                  governs how your data is handled.
                 </p>
               </section>
 
@@ -154,7 +155,7 @@ export default function PrivacyPolicy() {
                   <strong style={{ color: "var(--text)", fontWeight: 400 }}>
                     Amazon Web Services (AWS)
                   </strong>
-                  . Supabase is our only third-party data processor — it stores
+                  . Supabase is our only third-party data processor. It stores
                   data on our behalf so we can operate the website.
                 </p>
                 <p>
@@ -172,7 +173,7 @@ export default function PrivacyPolicy() {
                 </h2>
                 <p>
                   We retain your information only as long as needed for the
-                  purpose it was collected — to respond to your inquiry or to
+                  purpose it was collected: to respond to your inquiry or to
                   send you updates you asked for. When information is no longer
                   needed, we delete it or anonymize it. We do not store personal
                   data indefinitely.
