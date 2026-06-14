@@ -65,7 +65,7 @@ export default function InterestForm() {
           fontSize: '14px',
           fontFamily: 'var(--mono)',
         }}>
-          You are on the list.
+          You're on the list.
         </div>
       ) : (
         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
