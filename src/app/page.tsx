@@ -41,7 +41,7 @@ export default function Home() {
               overflow: "hidden",
               zIndex: 1,
               paddingTop: "5rem",
-              paddingBottom: "5rem",
+              paddingBottom: "2rem",
             }}
           >
             <div
@@ -224,7 +224,7 @@ export default function Home() {
             id="products"
             style={{
               width: "100%",
-              padding: "4rem 0",
+              padding: "2rem 0 4rem 0",
               position: "relative",
               zIndex: 1,
             }}
@@ -235,6 +235,7 @@ export default function Home() {
                 width: "100%",
                 margin: "0 auto",
                 padding: "0 2rem",
+                boxSizing: "border-box",
               }}
             >
               <div
