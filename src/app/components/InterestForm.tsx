@@ -44,7 +44,7 @@ export default function InterestForm() {
           fontSize: '14px',
           fontFamily: 'var(--mono)',
         }}>
-          You're on the list.
+          You&apos;re on the list.
         </div>
       ) : (
         <>
