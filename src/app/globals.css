@@ -90,8 +90,8 @@ body::after {
     transform: scale(1);
   }
   50% {
-    opacity: 0.45;
-    transform: scale(0.85);
+    opacity: 0.3;
+    transform: scale(0.6);
   }
 }
 
@@ -103,7 +103,7 @@ body::after {
   }
   50% {
     opacity: 0.15;
-    transform: scaleY(0.6);
+    transform: scaleY(0.5);
   }
 }
 
