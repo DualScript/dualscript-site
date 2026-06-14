@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import InterestForm from './components/InterestForm'
 
 export default function Home() {
@@ -421,13 +422,22 @@ export default function Home() {
             style={{ color: "var(--muted)" }}
           >
             <span>© 2026 DualScript LLC</span>
-            <a
-              href="mailto:info@dualscript.io"
-              className="transition-colors duration-200 hover:text-[var(--accent)]"
-              style={{ color: "var(--muted)" }}
-            >
-              info@dualscript.io
-            </a>
+            <div className="flex items-center gap-4">
+              <Link
+                href="/privacy-policy"
+                className="transition-colors duration-200 hover:text-[var(--accent)]"
+                style={{ color: "var(--muted)" }}
+              >
+                Privacy Policy
+              </Link>
+              <a
+                href="mailto:info@dualscript.io"
+                className="transition-colors duration-200 hover:text-[var(--accent)]"
+                style={{ color: "var(--muted)" }}
+              >
+                info@dualscript.io
+              </a>
+            </div>
           </div>
         </footer>
     </>
