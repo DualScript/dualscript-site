@@ -29,19 +29,19 @@ export default function Home() {
           </div>
         </nav>
 
-        <main>
+        <main style={{ margin: 0, padding: 0 }}>
           <section
             style={{
               position: "relative",
               width: "100%",
-              minHeight: "calc(100dvh - 56px)",
+              minHeight: "calc(100vh - 56px)",
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
               overflow: "hidden",
               zIndex: 1,
-              paddingTop: "4rem",
-              paddingBottom: "4rem",
+              paddingTop: "2rem",
+              paddingBottom: "2rem",
             }}
           >
             <div
@@ -224,7 +224,7 @@ export default function Home() {
             id="products"
             style={{
               width: "100%",
-              padding: "6rem 0",
+              padding: "4rem 0",
               position: "relative",
               zIndex: 1,
             }}
@@ -350,7 +350,7 @@ export default function Home() {
           <section
             style={{
               width: "100%",
-              padding: "6rem 0",
+              padding: "4rem 0",
               position: "relative",
               zIndex: 1,
             }}
@@ -365,7 +365,7 @@ export default function Home() {
               }}
             >
               <div
-                className="mx-auto mb-16 h-px w-[120px]"
+                className="mx-auto mb-8 h-px w-[120px]"
                 style={{ background: "var(--border)" }}
                 role="presentation"
               />
