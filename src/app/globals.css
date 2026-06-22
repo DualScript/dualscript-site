@@ -11,6 +11,7 @@
   --muted: #68778a;
   --border: rgba(255, 255, 255, 0.07);
   --border-mid: rgba(255, 255, 255, 0.05);
+  --error: #b87a7a;
 }
 
 html {

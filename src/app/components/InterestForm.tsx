@@ -6,23 +6,32 @@ export default function InterestForm() {
   const [email, setEmail] = useState('')
   const [product, setProduct] = useState('general')
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error' | 'duplicate'>('idle')
+  const [validationError, setValidationError] = useState(false)
 
   const handleSubmit = async () => {
-    if (!email || !email.includes('@')) return
+    if (!email || !email.includes('@')) {
+      setValidationError(true)
+      return
+    }
+    setValidationError(false)
     setStatus('loading')
 
-    const res = await fetch('/api/interest', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ email, product }),
-    })
+    try {
+      const res = await fetch('/api/interest', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, product }),
+      })
 
-    if (res.ok) {
-      setStatus('success')
-      setEmail('')
-    } else if (res.status === 409) {
-      setStatus('duplicate')
-    } else {
+      if (res.ok) {
+        setStatus('success')
+        setEmail('')
+      } else if (res.status === 409) {
+        setStatus('duplicate')
+      } else {
+        setStatus('error')
+      }
+    } catch {
       setStatus('error')
     }
   }
@@ -73,7 +82,10 @@ export default function InterestForm() {
               type="email"
               placeholder="your@email.com"
               value={email}
-              onChange={(e) => setEmail(e.target.value)}
+              onChange={(e) => {
+                setEmail(e.target.value)
+                if (validationError) setValidationError(false)
+              }}
               onKeyDown={(e) => e.key === 'Enter' && handleSubmit()}
               style={{
                 width: '100%',
@@ -139,13 +151,18 @@ export default function InterestForm() {
             >
               {status === 'loading' ? 'Sending...' : 'Notify me'}
             </button>
+            {validationError && (
+              <p style={{ fontSize: '13px', color: 'var(--error)', fontFamily: 'var(--mono)' }}>
+                Enter a valid email address.
+              </p>
+            )}
             {status === 'duplicate' && (
               <p style={{ fontSize: '13px', color: 'var(--muted)', fontFamily: 'var(--mono)' }}>
                 You are already on the list.
               </p>
             )}
             {status === 'error' && (
-              <p style={{ fontSize: '13px', color: '#ff6b6b', fontFamily: 'var(--mono)' }}>
+              <p style={{ fontSize: '13px', color: 'var(--error)', fontFamily: 'var(--mono)' }}>
                 Something went wrong. Try again.
               </p>
             )}
