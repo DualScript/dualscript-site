@@ -75,13 +75,15 @@ export default function PrivacyPolicy() {
               style={{ color: "var(--muted)" }}
             >
               <p style={{ color: "var(--text)" }}>
-                DualSpoke LLC (&ldquo;DualSpoke,&rdquo; &ldquo;we,&rdquo;
-                &ldquo;us&rdquo;) operates dualscript.io. This policy explains
-                what information we collect when you visit our website, how we
-                use it, and the choices you have. We build vertical software
-                products, with one live offering and more in development. On this
-                site we keep a small data footprint and collect only what we
-                need to respond to you and share occasional company updates.
+                DualSpoke is a trade name of DualScript LLC
+                (&ldquo;DualScript,&rdquo; &ldquo;we,&rdquo; &ldquo;us&rdquo;), a
+                Wyoming limited liability company, and is used in connection
+                with dualspoke.com. This policy explains what information we
+                collect when you visit our website, how we use it, and the
+                choices you have. We build vertical software products, with one
+                live offering and more in development. On this site, we keep a
+                small data footprint and collect only what we need to respond to
+                you and share occasional company updates.
               </p>
 
               <section>
