@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | DualScript",
+  title: "Privacy Policy | DualSpoke",
   description:
-    "How DualScript LLC collects, uses, and protects information on dualscript.io.",
+    "How DualSpoke LLC collects, uses, and protects information on dualscript.io.",
 };
 
 export default function PrivacyPolicy() {
@@ -27,7 +27,7 @@ export default function PrivacyPolicy() {
             className="text-[15px] tracking-[0.08em] transition-colors duration-200 hover:text-[var(--accent)]"
             style={{ color: "var(--text)" }}
           >
-            DualScript
+            DualSpoke
           </Link>
           <Link
             href="/"
@@ -75,7 +75,7 @@ export default function PrivacyPolicy() {
               style={{ color: "var(--muted)" }}
             >
               <p style={{ color: "var(--text)" }}>
-                DualScript LLC (&ldquo;DualScript,&rdquo; &ldquo;we,&rdquo;
+                DualSpoke LLC (&ldquo;DualSpoke,&rdquo; &ldquo;we,&rdquo;
                 &ldquo;us&rdquo;) operates dualscript.io. This policy explains
                 what information we collect when you visit our website, how we
                 use it, and the choices you have. We build vertical software
@@ -106,7 +106,7 @@ export default function PrivacyPolicy() {
                     <strong style={{ color: "var(--text)", fontWeight: 400 }}>
                       Email signup form
                     </strong>
-                    : your email address when you sign up to hear about DualScript
+                    : your email address when you sign up to hear about DualSpoke
                     products and updates.
                   </li>
                 </ul>
@@ -191,11 +191,11 @@ export default function PrivacyPolicy() {
                   You may request access to, correction of, or deletion of your
                   personal information at any time by emailing{" "}
                   <a
-                    href="mailto:info@dualscript.io"
+                    href="mailto:info@dualspoke.com"
                     className="transition-colors duration-200 hover:text-[var(--accent)]"
                     style={{ color: "var(--accent)" }}
                   >
-                    info@dualscript.io
+                    info@dualspoke.com
                   </a>
                   . We will respond to reasonable requests promptly.
                 </p>
@@ -247,16 +247,16 @@ export default function PrivacyPolicy() {
                 <p>
                   Questions about this policy or how we handle your data? Email{" "}
                   <a
-                    href="mailto:info@dualscript.io"
+                    href="mailto:info@dualspoke.com"
                     className="transition-colors duration-200 hover:text-[var(--accent)]"
                     style={{ color: "var(--accent)" }}
                   >
-                    info@dualscript.io
+                    info@dualspoke.com
                   </a>
                   .
                 </p>
                 <p className="mt-3">
-                  DualScript LLC
+                  DualSpoke LLC
                   <br />
                   Wyoming, United States
                 </p>
@@ -291,13 +291,13 @@ export default function PrivacyPolicy() {
           className="mx-auto flex max-w-[1100px] flex-col items-center gap-2 text-center text-xs md:flex-row md:items-center md:justify-between"
           style={{ color: "var(--muted)" }}
         >
-          <span>© 2026 DualScript LLC</span>
+          <span>© 2026 DualSpoke LLC</span>
           <a
-            href="mailto:info@dualscript.io"
+            href="mailto:info@dualspoke.com"
             className="transition-colors duration-200 hover:text-[var(--accent)]"
             style={{ color: "var(--muted)" }}
           >
-            info@dualscript.io
+            info@dualspoke.com
           </a>
         </div>
       </footer>
