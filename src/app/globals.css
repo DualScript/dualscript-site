@@ -4,9 +4,9 @@
 
 :root {
   --bg: #080d14;
-  --accent: #3ecfff;
-  --accent-dim: rgba(62, 207, 255, 0.18);
-  --accent-glow: rgba(62, 207, 255, 0.06);
+  --accent: #00b8f5;
+  --accent-dim: rgba(0, 184, 245, 0.18);
+  --accent-glow: rgba(0, 184, 245, 0.06);
   --text: #f0f0ee;
   --muted: #68778a;
   --border: rgba(255, 255, 255, 0.07);
