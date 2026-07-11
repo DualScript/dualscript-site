@@ -62,6 +62,8 @@ export default function Home() {
                 <img
                   src="/dualspoke-logo.png"
                   alt="DualSpoke"
+                  width={1316}
+                  height={260}
                   style={{ width: "100%", height: "auto" }}
                 />
               </div>
